@@ -1,0 +1,17 @@
+# PortalBlock - blocks entry into nether portals.
+enabled: true
+
+# Message shown when a player tries to enter a nether portal.
+# Supports '&' color codes. Leave empty to disable the message.
+message: "&5&oЧто-то изнутри не пускает тебя туда..."
+
+# Minimum interval between messages, in seconds (0 = every attempt).
+message-cooldown-seconds: 5
+
+# Don't let players physically step into a portal block,
+# so the purple portal overlay never appears.
+block-movement: true
+
+# If a player still ends up inside a portal (login, plugin teleport, etc.),
+# move them to the nearest safe block outside it.
+push-out: true

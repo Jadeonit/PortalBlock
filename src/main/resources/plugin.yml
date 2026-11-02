@@ -1,0 +1,22 @@
+name: PortalBlock
+version: 1.0.0
+main: ru.orbital.portalblock.PortalBlockPlugin
+api-version: '1.21'
+description: Blocks players from entering nether portals
+authors: [ Server ]
+
+commands:
+  portalblock:
+    description: Manage PortalBlock
+    usage: /portalblock reload
+    aliases: [ pblock ]
+    permission: portalblock.admin
+    permission-message: 'Unknown command.'
+
+permissions:
+  portalblock.admin:
+    description: Access to /portalblock
+    default: op
+  portalblock.bypass:
+    description: Allows travelling through nether portals
+    default: op
